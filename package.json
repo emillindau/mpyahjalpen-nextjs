@@ -1,0 +1,42 @@
+{
+  "name": "mpyahjalpen-nextjs",
+  "version": "0.1.0",
+  "private": true,
+  "lint-staged": {
+    "*.ts": "tsc-files --noEmit",
+    "*.{js,jsx,ts,tsx}": "npx eslint",
+    "*.{js,jsx,ts,tsx,html,css}": "npx prettier --check"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@react-three/drei": "^9.40.0",
+    "@react-three/fiber": "^8.0.27",
+    "date-fns": "^2.29.3",
+    "gray-matter": "^4.0.3",
+    "next": "^13.0.5",
+    "react": "^18.2.0",
+    "react-confetti": "^6.1.0",
+    "react-dom": "^18.2.0",
+    "react-query": "^3.39.2",
+    "remark": "^14.0.2",
+    "remark-html": "^15.0.1",
+    "styled-components": "^5.3.6",
+    "three": "^0.141.0"
+  },
+  "devDependencies": {
+    "@types/node": "18.11.9",
+    "@types/react": "18.0.25",
+    "@types/three": "^0.141.0",
+    "babel-plugin-styled-components": "^2.0.7",
+    "eslint": "^8.28.0",
+    "eslint-config-next": "^13.0.5",
+    "husky": "^8.0.2",
+    "lint-staged": "^13.0.4",
+    "tsc-files": "^1.1.3"
+  }
+}
